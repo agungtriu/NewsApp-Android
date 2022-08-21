@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">News App</string>
+    <string name="about_email">agungtriu@outlook.com</string>
+    <string name="about_name">Agung Tri Utomo</string>
+    <string name="all_share">Share</string>
+    <string name="menu_home_about">about</string>
+</resources>
