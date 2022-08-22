@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".news.DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageview_detail_poster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/textview_detail_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_all_medium"
+        android:layout_marginTop="@dimen/margin_all_medium"
+        android:layout_marginEnd="@dimen/margin_all_medium"
+        android:textSize="@dimen/text_all_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textview_detail_author"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageview_detail_poster" />
+
+    <TextView
+        android:id="@+id/textview_detail_author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_all_medium"
+        android:layout_marginTop="@dimen/margin_all_medium"
+        android:textSize="@dimen/text_all_subdesc"
+        app:layout_constraintBottom_toTopOf="@id/textview_detail_desc"
+        app:layout_constraintEnd_toStartOf="@id/textview_detail_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_detail_title" />
+
+    <TextView
+        android:id="@+id/textview_detail_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_all_medium"
+        android:layout_marginEnd="@dimen/margin_all_medium"
+        android:textAlignment="textEnd"
+        android:textSize="@dimen/text_all_subdesc"
+        app:layout_constraintBottom_toTopOf="@id/textview_detail_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textview_detail_author"
+        app:layout_constraintTop_toBottomOf="@id/textview_detail_title" />
+
+    <TextView
+        android:id="@+id/textview_detail_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_all_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_detail_author" />
+
+    <Button
+        android:id="@+id/button_detail_visitnews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_button_visitnews"
+        android:textSize="@dimen/text_all_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/view_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_detail_desc" />
+
+    <View
+        android:id="@+id/view_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_detail_visitnews" />
+</androidx.constraintlayout.widget.ConstraintLayout>

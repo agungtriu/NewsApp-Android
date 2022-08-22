@@ -31,8 +31,8 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.HomeViewHolder>() {
                 textviewItemnewsTitle.text = news.title
                 textviewItemnewsDesc.text = news.description
                 cardviewItemNews.setOnClickListener {
-                    val intent = Intent(itemView.context, DetailNewsActivity::class.java)
-                    intent.putExtra(DetailNewsActivity.EXTRA_DETAIL, news)
+                    val intent = Intent(itemView.context, DetailActivity::class.java)
+                    intent.putExtra(DetailActivity.EXTRA_DETAIL, news)
                     itemView.context.startActivity(intent)
                 }
             }
