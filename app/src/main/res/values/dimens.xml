@@ -12,4 +12,5 @@
 
     <dimen name="text_all_title">16sp</dimen>
     <dimen name="text_all_desc">14sp</dimen>
+    <dimen name="text_all_subdesc">12sp</dimen>
 </resources>

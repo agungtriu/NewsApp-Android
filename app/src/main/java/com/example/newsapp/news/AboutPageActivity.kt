@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NavUtils
+import com.example.newsapp.R
 import com.example.newsapp.databinding.ActivityAboutPageBinding
 
 class AboutPageActivity : AppCompatActivity() {
@@ -14,6 +15,7 @@ class AboutPageActivity : AppCompatActivity() {
         setContentView(activityAboutPageBinding.root)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = getString(R.string.aboutpage_title)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

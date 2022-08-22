@@ -4,4 +4,6 @@
     <string name="about_name">Agung Tri Utomo</string>
     <string name="all_share">Share</string>
     <string name="menu_home_about">about</string>
+    <string name="detail_button_visitnews">Visit News</string>
+    <string name="aboutpage_title">About</string>
 </resources>

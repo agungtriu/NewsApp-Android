@@ -14,7 +14,7 @@ import com.example.newsapp.network.ArticlesItem
 
 class DetailNewsActivity : AppCompatActivity() {
     companion object {
-        const val EXTRA_DETAIL = "extra_detail"
+        const val EXTRA_DETAIL_NEWS = "extra_detail_news"
     }
 
     private lateinit var detailNewsBinding: ActivityDetailNewsBinding
@@ -24,7 +24,7 @@ class DetailNewsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         detailNewsBinding = ActivityDetailNewsBinding.inflate(layoutInflater)
         setContentView(detailNewsBinding.root)
-        val extras = intent.getParcelableExtra<ArticlesItem>(EXTRA_DETAIL)
+        val extras = intent.getParcelableExtra<ArticlesItem>(EXTRA_DETAIL_NEWS)
         extras?.also {
             url = it.url.toString()
             title = it.title.toString()
